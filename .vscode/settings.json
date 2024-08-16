@@ -3,5 +3,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "cSpell.language": "en,es",
-    "http.proxySupport": "off"
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always",
+        "source.addMissingImports": "always"
+    }
 }
