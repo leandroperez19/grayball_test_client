@@ -13,6 +13,12 @@ const darkTheme: DefaultTheme = {
             white: colors.white,
             black: colors.black,
             purple: colors.purple,
+            green: colors.green,
+        },
+        backgrounds: {
+            primary: colors.veryDarkGray,
+            secondary: colors.darkGray,
+            tertiary: colors.gray,
         },
     },
     page: {
@@ -32,9 +38,9 @@ const darkTheme: DefaultTheme = {
             hoverColor: colors.white,
         },
         secondary: {
-            background: colors.white,
-            color: colors.purple,
-            hoverBackground: colors.lightPurple,
+            background: colors.opaquePurple,
+            color: colors.white,
+            hoverBackground: colors.darkGray,
             hoverColor: colors.white,
         },
         danger: {
@@ -48,6 +54,38 @@ const darkTheme: DefaultTheme = {
         background: colors.purple,
         ball: colors.white,
         hoverBackground: colors.lightPurple,
+    },
+    input: {
+        primary: {
+            borderColor: colors.opaqueGray,
+            background: colors.transparent,
+            color: colors.black,
+            borderOnFocus: colors.black,
+            labelColor: colors.opaqueGray,
+            labelColorFocus: colors.opaqueGray,
+            dangerColor: colors.red,
+        },
+        secondary: {
+            borderColor: colors.transparent,
+            background: colors.gray,
+            color: colors.white,
+            borderOnFocus: colors.transparent,
+            labelColor: colors.gray2,
+            labelColorFocus: colors.grayishGreen,
+            dangerColor: colors.red,
+        },
+    },
+    dropdown: {
+        background: colors.veryDarkGray,
+        color: colors.white,
+        labelColor: colors.purple,
+        optionsBg: colors.gray,
+        selectedHover: colors.darkerGray,
+        optionHover: colors.darkGray,
+    },
+    cards: {
+        background: colors.veryDarkGray,
+        color: colors.white,
     },
 };
 

@@ -9,11 +9,11 @@ import ThemeToggle from "@/components/themeToggle/themeToggle";
 export const Navbar: FC = () => {
     return (
         <NavbarWrapper>
-            <div className="content flex items-center justify-between w-full h-full">
+            <div className="content">
                 <div className="left">
                     <Image src="/logo.webp" alt="logo" width={30} height={30} />
                 </div>
-                <div className="right flex gap-4">
+                <div className="right">
                     <FaShoppingCart color={colors.lightPurple} size={20} />
                     <ThemeToggle />
                 </div>

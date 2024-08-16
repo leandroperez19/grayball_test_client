@@ -2,6 +2,7 @@
 
 export const smallPhone = "300px";
 export const phone = "375px";
+export const largePhone = "580px";
 export const tablet = "768px";
 export const desktop = "1024px";
 export const extraLargeScreen = "1200px";

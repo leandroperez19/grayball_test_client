@@ -7,12 +7,27 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         transition: color, background 0.2s ease-in-out;
         font-family: "Inter", sans-serif;
+
+        &::-webkit-scrollbar {
+            background-color: ${({ theme }) => theme.page.background};
+            width: 0.5rem;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: ${({ theme }) => theme.page.background};
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: ${({ theme }) => theme.page.scrollbarThumb};
+            border-radius: 0.25rem;
+        }
     }
 
     body {
         min-height: 100dvh;
         min-width: 100dvw;
         background-color: ${({ theme }) => theme.page.background};
+        overflow-x: hidden;
     }
 
     // extra classes

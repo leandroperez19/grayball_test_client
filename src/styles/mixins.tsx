@@ -1,5 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
 import { css } from "styled-components";
+import { desktop, tablet } from "./constants/sizes";
 
 interface Flex {
     align: "initial" | "center" | "flex-end" | "flex-start" | "unset";
@@ -7,7 +8,11 @@ interface Flex {
     direction: "row" | "column" | "unset";
 }
 
-type Size = `${number}px` | `${number}%` | `${number}rem` | `${number}em`;
+export type Size =
+    | `${number}px`
+    | `${number}%`
+    | `${number}rem`
+    | `${number}em`;
 
 export const flex = (
     align: Flex["align"] = "initial",
@@ -40,7 +45,7 @@ export const fullSize = () => css`
     ${square("100%")}
 `;
 
-export const GridResponsive = (minWidth: string, autoFit = true) => css`
+export const GridResponsive = (minWidth: Size, autoFit = true) => css`
     display: grid;
     grid-template-columns: repeat(
         ${autoFit ? "auto-fit" : "auto-fill"},
@@ -56,6 +61,25 @@ export const truncateText = (lines: number, breakWord = false) => css`
     text-overflow: ellipsis;
 
     ${breakWord && "word-break: break-all"}
+`;
+
+export const pageContainer = () => css`
+    top: 50px;
+    width: 90%;
+    margin-inline: auto;
+    max-width: 400px;
+    position: relative;
+    padding-block: 40px;
+
+    @media (width >= ${tablet}) {
+        top: 80px;
+        max-width: 720px;
+        padding-block: 60px;
+    }
+
+    @media (width >= ${desktop}) {
+        max-width: 1024px;
+    }
 `;
 
 export const iOSOnly = (styles: string) => {

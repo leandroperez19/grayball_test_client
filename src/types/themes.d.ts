@@ -13,6 +13,12 @@ declare module "styled-components" {
                 white: string;
                 black: string;
                 purple: string;
+                green: string;
+            };
+            backgrounds: {
+                primary: string;
+                secondary: string;
+                tertiary: string;
             };
         };
         navbar: {
@@ -48,6 +54,38 @@ declare module "styled-components" {
             background: string;
             ball: string;
             hoverBackground: string;
+        };
+        input: {
+            primary: {
+                borderColor: string;
+                background: string;
+                color: string;
+                borderOnFocus: string;
+                labelColor: string;
+                labelColorFocus: string;
+                dangerColor: string;
+            };
+            secondary: {
+                borderColor: string;
+                background: string;
+                color: string;
+                borderOnFocus: string;
+                labelColor: string;
+                labelColorFocus: string;
+                dangerColor: string;
+            };
+        };
+        dropdown: {
+            background: string;
+            color: string;
+            labelColor: string;
+            optionsBg: string;
+            selectedHover: string;
+            optionHover: string;
+        };
+        cards: {
+            background: string;
+            color: string;
         };
     }
 }
