@@ -1,6 +1,6 @@
 "use client";
 
-import { desktop, largePhone, small, tiny } from "@/styles/constants/sizes";
+import { desktop, largePhone, tiny } from "@/styles/constants/sizes";
 import { square, truncateText } from "@/styles/mixins";
 import styled from "styled-components";
 

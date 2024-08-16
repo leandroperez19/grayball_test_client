@@ -1,8 +1,7 @@
 "use client";
 
 import Button from "@/components/button/button";
-import { useScreen } from "@/hooks/useScreen";
-import { FC, useState } from "react";
+import { FC } from "react";
 import { useNumericInput } from "./cardNumericInput.hooks";
 
 type NumericInputProps = {
